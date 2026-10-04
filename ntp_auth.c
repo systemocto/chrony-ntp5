@@ -204,6 +204,7 @@ NAU_GetSuggestedNtpVersion(NAU_Instance instance)
     case NTP_AUTH_NTS:
       return NNC_GetSuggestedNtpVersion(instance->nts);
     default:
+      break;
   }
 
   return NTP_VERSION;
